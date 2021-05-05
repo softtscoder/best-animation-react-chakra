@@ -105,7 +105,7 @@ export const Timer: React.FC<TimerProps> = ({
       if (isTimerActive) {
         setTimeout(() => {
           setTime(time - 1);
-        }, 1);
+        }, 1000);
       }
     } else if (time === 0) {
       setIsTimerActive(!isTimerActive);
